@@ -44,11 +44,11 @@ select {
   display: flex;
   justify-content: space-between;
 }
-#navigation .navIcons .navicon {
+#navigation .navIcons .navicon a {
   padding:  10px;
   color: #65686c;
 }
-#navigation .navIcons .navicon.active{
+#navigation .navIcons .navicon.active a{
   color: #0e7be0;
 }
 /* nav end */
