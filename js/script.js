@@ -64,6 +64,16 @@ function postItem() {
                 <option value="#">only me</option>
               </select>
             </div>
+            <ul class="postAction">
+            <li><i class="fa-solid fa-thumbtack"></i><span>Pin post</span></li>
+            <li><i class="fa-solid fa-bookmark"></i><sapn>Save post</sapn></li>
+            <li><i class="fa-solid fa-pen"></i><span>Edit post</span></li>
+            <li><i class="fa-solid fa-trash"></i><span>Delete post</span></li>
+            <li><i class="fa-solid fa-comment-slash"></i><span>Turn off commenting</span></li>
+            <li><i class="fa-solid fa-gear"></i><span>Edit audience</span></li>
+            <li><i class="fa-solid fa-box-archive"></i><span>Move to archive</span></li>
+            <li class="ActionHide"><button><i class="fa-solid fa-xmark"></i></button></li>
+            </ul>
           </div>
           <button type="button" class="postInfoMore"><i class="fa-solid fa-ellipsis"></i></button>
         </div>
@@ -101,6 +111,23 @@ function postItem() {
 
     });
 
+    // Post Action
+    let postAction = document.querySelector('.postAction');
+
+    postAction.style.transform = 'scaleY(0)'
+
+    let postInfoMore = document.querySelector('.postInfoMore');
+
+    let ActionHide = document.querySelector('.ActionHide');
+
+    postInfoMore.addEventListener('click' , ()=>{
+      postAction.style.transform = 'scaleY(1)'
+    })
+    
+    ActionHide.addEventListener('click' , ()=>{
+      postAction.style.transform = 'scaleY(0)'
+
+    })
   });
 }
 
