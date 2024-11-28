@@ -45,7 +45,7 @@ select {
   justify-content: space-between;
 }
 #navigation .navIcons .navicon {
-  padding: 0 10px;
+  padding:  10px;
   color: #65686c;
 }
 #navigation .navIcons .navicon.active{
@@ -91,6 +91,9 @@ select {
   margin-top: 10px;
   display: flex;
   justify-content: space-around;
+}
+#post .postBox .PostBottom:hover{
+  cursor: pointer;
 }
 #post .postBox .PostBottom .item {
   display: flex;

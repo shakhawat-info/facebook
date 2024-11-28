@@ -1,0 +1,9 @@
+
+@media(max-width: 575.98px) { 
+    #post .poster .main {
+        width: 90%;
+    }
+    #post .poster .mainPost .imgVideo {
+        height: 200px;
+    }
+ }
