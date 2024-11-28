@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO-DO-FB</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- nav start -->
+    <nav id="navigation">
+      <div class="container">
+        <ul class="navIcons">
+          <li class="navicon"><i class="fa-solid fa-house"></i></li>
+          <li class="navicon"><i class="fa-solid fa-user-group"></i></li>
+          <li class="navicon"><i class="fa-solid fa-store"></i></li>
+          <li class="navicon"><i class="fa-brands fa-facebook-messenger"></i></li>
+          <li class="navicon"><i class="fa-solid fa-bell"></i></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- nav end -->
+    <main>
+      <!-- post start -->
+      <section id="post">
+        <div class="container">
+          <div class="postBox">
+            <div class="Posttop">
+              <img class="profile" src="image/profile.jpg" alt="profile" />
+              <input
+                class="whtaMind"
+                type="text"
+                placeholder="What's on your mind , Md. Shakhawat?"
+                onfocus="showPoster()"
+                readonly="readonly"
+              />
+            </div>
+            <div class="PostBottom">
+              <div class="item" onclick="showPoster()">
+                <i class="fa-solid fa-video" style="color: rgb(221, 39, 39)"></i
+                ><span>Live Video</span>
+              </div>
+              <div class="item" onclick="showPoster()">
+                <i
+                  class="fa-regular fa-image"
+                  style="color: rgb(77, 196, 77)"
+                ></i
+                ><span>Photo/video</span>
+              </div>
+              <div class="item" onclick="showPoster()">
+                <i
+                  class="fa-regular fa-face-smile"
+                  style="color: rgb(235, 186, 66)"
+                ></i
+                ><span>Feelings/activity</span>
+              </div>
+            </div>
+          </div>
+          <div class="poster" >
+            <div class="main">
+              <div class="itemOne">
+                <h3>Create post</h3>
+                <button class="posterHidden"><i class="fa-solid fa-xmark"></i></button>
+              </div>
+              <div class="posterProfile">
+                <img src="image/profile.jpg" alt="profile" class="posterImg" />
+                <div>
+                  <h3 class="posterName">Md. Shakhawat Hossain</h3>
+                  <select name="postVisit" id="postVisit">
+                    <option value="#">public</option>
+                    <option value="#">friends</option>
+                    <option value="#">only me</option>
+                    <option value="#">custom</option>
+                  </select>
+                </div>
+              </div>
+              <div class="mainPost">
+                <textarea
+                  name="post"
+                  class="postingText"
+                  id="post"
+                  placeholder="What's on your mind , Md. Shakhawat?"
+                  oninput="postButton()"
+                ></textarea>
+                <div class="imgVideo">
+                  <div class="add">
+                    <i class="fa-regular fa-image"></i>
+                    <p>add photos/videos</p>
+                  </div>
+                  <input type="file" />
+                  <!-- <img class="postingImg" src="#" alt="postingImg"> -->
+                </div>
+                <div class="addyourPost">
+                  <h4>Add your post</h4>
+                  <ul>
+                    <li style="color: rgb(77, 196, 77)">
+                      <i class="fa-regular fa-image"></i>
+                    </li>
+                    <li style="color: rgb(14, 123, 224)">
+                      <i class="fa-solid fa-user-tag"></i>
+                    </li>
+                    <li style="color: rgb(235, 186, 66)">
+                      <i class="fa-regular fa-face-smile"></i>
+                    </li>
+                    <li style="color: rgb(255, 0, 0)">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </li>
+                    <li style="color: #636060">
+                      <i class="fa-solid fa-ellipsis"></i>
+                    </li>
+                  </ul>
+                </div>
+                <div class="upload">
+                  <button type="button" class="uploadbtn">post</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- post end -->
+      <!-- newsfeed start -->
+      <section id="newsfeed">
+        <div class="container">
+          <div class="feedBox">
+
+          </div>
+        </div>
+      </section>
+      <!-- newsfeed end -->
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
